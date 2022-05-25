@@ -29,7 +29,7 @@
     "@m9ch/eslint-config-all": "^0.2.2",
     "bumpp": "^7.1.1",
     "eslint": "^8.15.0",
-    "tsup": "5.12.8",
+    "tsup": "5.12.9",
     "typescript": "4.7.2",
     "vite": "2.9.9",
     "vitest": "0.12.9"
