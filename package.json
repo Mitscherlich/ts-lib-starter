@@ -26,9 +26,9 @@
     "example:build": "vite build example/ -c vite.config.js"
   },
   "devDependencies": {
-    "@m9ch/eslint-config-all": "^0.2.2",
+    "@m9ch/eslint-config-all": "0.2.4",
     "bumpp": "8.2.1",
-    "eslint": "^8.15.0",
+    "eslint": "8.22.0",
     "tsup": "6.2.2",
     "typescript": "4.7.4",
     "vite": "3.0.7",
