@@ -28,7 +28,7 @@
   "devDependencies": {
     "@m9ch/eslint-config-all": "0.3.0",
     "bumpp": "8.2.1",
-    "eslint": "8.27.0",
+    "eslint": "8.28.0",
     "tsup": "6.5.0",
     "typescript": "4.8.4",
     "vite": "3.2.4",
