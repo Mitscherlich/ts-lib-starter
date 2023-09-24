@@ -3,34 +3,31 @@
   "version": "0.0.0",
   "description": "My awesome typescript library",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.cjs"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build-fast": "tsup src/index.ts --format cjs,esm",
-    "build": "pnpm run build-fast -- --dts-resolve",
+    "build": "unbuild",
+    "build:stub": "unbuild --stub",
+    "dev": "vite example/ -c vite.config.js",
     "test": "vitest run",
-    "release": "bumpp package.json --commit --push --tag && pnpm publish --access public",
-    "prepublishOnly": "pnpm run build",
-    "example:dev": "vite example/ -c vite.config.js",
-    "example:build": "vite build example/ -c vite.config.js"
+    "release": "bumpp package.json && pnpm publish"
   },
   "devDependencies": {
     "@m9ch/eslint-config-all": "0.3.2",
     "bumpp": "9.2.0",
     "eslint": "8.50.0",
-    "tsup": "7.2.0",
     "typescript": "5.2.2",
+    "unbuild": "^2.0.0",
     "vite": "4.4.9",
     "vitest": "0.34.5"
   }
