@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@m9ch/eslint-config-all": "0.3.2",
-    "bumpp": "10.2.2",
+    "bumpp": "10.3.1",
     "eslint": "9.32.0",
     "typescript": "5.9.3",
     "unbuild": "^3.0.0",
